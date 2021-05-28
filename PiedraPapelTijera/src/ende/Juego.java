@@ -11,8 +11,8 @@ public class Juego
 {
     public static void main(String args[])
     {
-        Jugador p1=new Jugador();
-        Jugador p2=new Jugador();
+        Jugador p1=new Jugador(0,0);
+        Jugador p2=new Jugador(0,0);
         boolean fin_de_juego=false;  
         Integer Rondasjugadas = 0;    // Número de rondas jugadas
         Integer EXITOS_jugador1=p1.Exitos;
@@ -66,7 +66,14 @@ public class Juego
  *
  */
 class Jugador{
-   
+	
+    int Exitos;      // número de partidas ganadas
+    int winTotal;
+    public Jugador(int queExitos, int queWin) {
+    	Exitos = queExitos;
+    	winTotal = queWin;
+    }
+    
     /**
      * Escoge piedra, papel o tijera al azar
      */
@@ -94,7 +101,5 @@ class Jugador{
     {
         return(Exitos);
     }
-    
-    int Exitos;      // número de partidas ganadas
-    int winTotal;
+
 }
