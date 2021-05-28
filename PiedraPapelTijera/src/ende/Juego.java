@@ -1,11 +1,10 @@
-package ende;
-
 /**
  * Simula el juego de Piedra, Papel o tijera
  * @author Unai P
  * @version 1.0
  */
 
+package ende;
 
 public class Juego 
 {
